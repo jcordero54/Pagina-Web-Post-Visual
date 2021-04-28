@@ -1,0 +1,107 @@
+/* Patrones globales del CSS */
+
+/* Tipo de Títulos, Subtítulos y Enlaces: Oswald */
+h1, h2, h3, h4, h5, h6, a, button { font-family: 'Oswald', sans-serif; }
+
+/* Tipo de Párrafos: Lato */
+p, span, strong, em, div { font-family: 'Lato', sans-serif; }
+
+/* Quitar margen por defecto de Body */
+body { margin: 0 !important; }
+
+/* Quitar margen por defecto en Titulos y Párrafos */
+h1, h2, h3, h4, h5, h6, p, figure { margin: 0; }
+
+/* Confirmar display: block; a elementos de estructura HTML5 */
+header, aside, main, footer, section, article, figure, nav, figcaption { display: block; }
+
+
+
+
+/* Componentes Aside: Boton Instagram y Whatsapp */
+aside#boton { width: 50px; height: 50px; margin: 0px; float: none; position: fixed; bottom: 450px; right: 10px; z-index: 99999; background: #000; border-radius: 10%; }
+aside#boton a { width: 100%; height: auto; display: block; margin: 0 auto; position: relative; color: #eee; font-size: 1.70em; line-height: 1em; text-align: center; padding: 8px 0; transition: all 0.3s ease-in; background: #4200ab; float: none; border-radius: 10%; box-shadow: 0 0 15px rgb(0 0 0 / 30%); }
+aside#boton a:hover { color: #000; transition: all 0.3 ease-in; transform: scale(1.05); }
+
+
+
+
+/* Componentes Header logo a la izquierda y especializaciones a la derecha */
+header { width: 100%; height: 100px; margin: 0; float: none; position: fixed; top: 0; left: 0; z-index: 99997; background: #000; opacity: 98.5%; }
+header article { margin: 0px auto; float: none; position: relative; }
+
+header article figure { width: 60px; height: 60px; display: block; margin: 20px; float: left; position: relative; left: 200px; }
+header article figure a { width: 100%; height: 100%; display: block; margin: 0 auto; float: none; position: relative; }
+header article figure a img { width: 100%; height: auto; display: block; margin: 0 auto; float: none; position: relative; }
+header article figure a img:hover { transition: all 0.3s ease-in; }
+header article figure a h1 { width: 125px; height: auto; display: block; margin: 35px 0px 35px 0px; float: left; position: relative; color: #fff; font-size: 1em; bottom: 80px; left: 80px; }
+header article figure a h1:hover { transition: all 0.3s ease-in; }
+
+header article nav#menu { display: block; margin: 24px 0px; float: right; position: relative; right: 200px; }
+header article nav#menu a { width: auto; height: auto; display: block; margin: 15px; float: left; position: relative; font-size: 1em; line-height: 1em; text-decoration: none; color: #fff; }
+header article nav#menu a:hover { transition: all 0.3s ease-in; color: #4200ab; border-bottom: solid 2px #4200ab; }
+header article nav#menu a.activo { opacity: 0.9; transition: all 0.3 ease-in; color: #4200ab; border-bottom: solid 2px #4200ab; }
+ 
+
+
+
+/* Caja Main */
+
+/* Caja Slides*/
+main section#slide { width: 100%; height: auto; background: #000; margin: 0 auto; float: none; position: relative; }
+main section#slide article.slick-slider { width: 100%; height: 88vh; margin: 0 auto; position: relative; float: none; }
+
+main section#slide article.slick-slider figure { width: 100%; height: 88vh; margin: 0; position: relative; float: left; }
+main section#slide article.slick-slider figure#slide-01 { background: url('../img/contenido/slide-01.jpg') no-repeat top center; background-size: cover; }
+main section#slide article.slick-slider figure#slide-02 { background: url('../img/contenido/slide-02.jpg') no-repeat top center; background-size: cover; display: none; }
+main section#slide article.slick-slider figure#slide-03 { background: url('../img//contenido/slide-03.jpg') no-repeat top center; background-size: cover; display: none; }
+
+.slick-prev { left: 30px !important; z-index: 998; }
+.slick-next { right: 30px !important; z-index: 999; }
+.slick-dots { bottom: 30px !important; }
+
+
+
+
+/* Secciones de información */
+main section#que-hacemos article { width: 100%; height: 600px; background: #000; color: #fff; }
+main section#que-hacemos article figure h2 {  }
+main section#que-hacemos article figure p { text-align: center; font-size: 1.1em; line-height: 1.3em; color: #fff; }
+main section#que-hacemos article figure img {  }
+main section#que-hacemos article figure img:hover {  }
+
+
+main section#quienes-somos article { width: 100%; height: 600px; background: #000; color: #fff; }
+main section#quienes-somos article figure h2 {  }
+main section#quienes-somos article figure p { text-align: center; font-size: 1.1em; line-height: 1.3em; color: #fff; }
+main section#quienes-somos article figure img {  }
+main section#quienes-somos article figure img:hover {  }
+
+
+main section#caracteristicas article { width: 100%; height: 600px; margin: 0 auto; float: none; position: relative; background: #4200ab; color: #fff; }
+main section#caracteristicas article figure#titulo-caracteristicas h3 {  }
+
+main section#caracteristicas article figure#compromiso h3 {  }
+main section#caracteristicas article figure#compromiso img {  }
+
+main section#caracteristicas article figure#calidad h3 {  }
+main section#caracteristicas article figure#calidad img {  }
+
+main section#caracteristicas article figure#seguridad h3 {  }
+main section#caracteristicas article figure#seguridad img {  }
+
+
+
+
+/* Componente Footer */
+footer { background: #000; color: #fff; width: 100%; height: 300px; }
+
+footer div#footer { align-items: center; display: flex; flex-direction: column; text-align: center; padding: 20px; }
+footer div#footer a img { width: 60px; height: 60px; margin: 20px 0px 20px 0px; }
+
+footer div#footer h3 { margin: 0px auto; font-size: 20px; color: #fff; margin: 0px 0px 20px 0px;  }
+footer div#footer p { max-width: 500px; margin: 0px auto; font-size: 16px; }
+
+footer div#footer-links { list-style: none; align-items: center; justify-content: center; display: flex; }
+footer div#footer-links a { color: #fff; margin: 6px 10px; }
+footer div#footer-links a:hover { transform: scale(1.03); transition: all 0.3s ease-in; color: #4200ab; }
